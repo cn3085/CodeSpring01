@@ -27,11 +27,19 @@ public class RootConfig {
 	public DataSource dataSource() {
 		HikariConfig hikariConfig = new HikariConfig();
 //		hikariConfig.setDriverClassName("com.mysql.jdbc.Driver");
-//		hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/book_ex");
+//		hikariConfig.setJdbcUrl("jdbc:mysql://localhost:3306/book_ex")
+		;
+//		hikariConfig.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
+//		hikariConfig.setJdbcUrl("jdbc:log4jdbc:mysql://localhost:3306/book_ex");
+//		hikariConfig.setUsername("book_ex");
+//		hikariConfig.setPassword("book_ex");
+
 		hikariConfig.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
-		hikariConfig.setJdbcUrl("jdbc:log4jdbc:mysql://localhost:3306/book_ex");
-		hikariConfig.setUsername("book_ex");
-		hikariConfig.setPassword("book_ex");
+//		hikariConfig.setJdbcUrl("jdbc:log4jdbc:mysql://mysql.cfjfk3ftmgo9.ap-northeast-2.rds.amazonaws.com/openproject?characterEncoding=utf8");
+//		hikariConfig.setJdbcUrl("jdbc:log4jdbc:mysql://mysql.cfjfk3ftmgo9.ap-northeast-2.rds.amazonaws.com?characterEncoding=utf8");
+		hikariConfig.setJdbcUrl("jdbc:log4jdbc:mysql://mysql.cfjfk3ftmgo9.ap-northeast-2.rds.amazonaws.com");
+		hikariConfig.setUsername("bit");
+		hikariConfig.setPassword("bit");
 		
 		HikariDataSource dataSource = new HikariDataSource(hikariConfig);
 		

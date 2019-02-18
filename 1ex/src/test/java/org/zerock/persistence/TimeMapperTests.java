@@ -25,10 +25,10 @@ public class TimeMapperTests {
 		
 	}
 
-	@Test
-	public void testGetTime2() {
-		log.info("getTime2");
-		log.info(timeMapper.getTime2());
-		
-	}
+//	@Test
+//	public void testGetTime2() {
+//		log.info("getTime2");
+//		log.info(timeMapper.getTime2());
+//		
+//	}
 }
